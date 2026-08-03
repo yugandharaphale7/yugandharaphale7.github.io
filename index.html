@@ -653,7 +653,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
     </div>
 
     <h1 class="hero-name">YUGANDHAR APHALE</h1>
-    <p class="hero-role">Finance<span class="sep"></span> Data Science</p>
+    <p class="hero-role">Computer Science <span class="sep"></span> Data Science</p>
 
     <div class="hero-grid">
       <div class="reveal in">
@@ -824,6 +824,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
         </div>
       </article>
 
+      <!-- Project 04 -->
+      <article class="project reveal">
+        <div class="project-top">
+          <div><span class="project-name">Spirit Airlines Ch. 11 — DIP &amp; APR Waterfall Model</span></div>
+          <span class="badge badge-done">completed</span>
+        </div>
+        <div class="project-body">
+          <div><div class="field-lbl">Architecture</div><div class="field-val">Six-tab, fully formula-driven Excel model: pre-petition historicals &rarr; 13-week liquidity build &rarr; claims/cap structure registry &rarr; DIP term sheet with adequate-protection test &rarr; EV-at-exit comps bridge &rarr; APR waterfall with fulcrum-security sensitivity toggle.</div></div>
+          <div><div class="field-lbl">Problem</div><div class="field-val">Modelling how a real, recently completed Chapter 11 case (In re Spirit Airlines, Case No. 24-11988) actually resolves: when a distressed airline needs DIP financing, who gets paid first, and which class of creditors ends up as the fulcrum security once Enterprise Value is established.</div></div>
+          <div><div class="field-lbl">Solution</div><div class="field-val">Built a 13-week cash flow model off Spirit's actual pre-petition liquidity to pinpoint the covenant-breach week and size the $309mm DIP draw, then ran a strict Absolute Priority Rule waterfall against a Perella Weinberg-sourced EV/EBITDAR exit valuation, with a live sensitivity toggle showing how the fulcrum security shifts from Secured Notes to Converts to New Equity as distributable value changes - then benchmarked the textbook APR result against Spirit's actual negotiated RSA "global settlement" outcome.</div></div>
+          <div>
+            <div class="field-lbl">Technologies</div>
+            <div class="tech-row">
+              <span class="tech-chip">Excel</span><span class="tech-chip">Financial Modeling</span><span class="tech-chip">DIP Financing</span><span class="tech-chip">APR Waterfall</span><span class="tech-chip">SEC EDGAR Research</span>
+            </div>
+          </div>
+          <div class="field-full"><div class="field-lbl">Performance</div><div class="field-val">Base-case waterfall ($1.7bn distributable value) fully repays DIP, admin, and the $1.11bn Senior Secured Notes, leaving Convertible Notes as the fulcrum security at a 24.9% recovery; sensitivity grid spans an $800mm&ndash;$2,300mm value range showing the fulcrum shift from Secured Notes &rarr; Converts &rarr; New Equity. Cross-checked against Spirit's real RSA outcome (71%-137% actual Convert recovery vs. textbook APR).</div></div>
+          <div class="field-full"><div class="field-lbl">Lessons learned</div><div class="field-val">The APR waterfall is the analytical baseline every restructuring analyst has to be able to run cold, but real deals get resolved through negotiated, consensual settlements, not strict legal triage - Spirit's Converts recovered value even in scenarios where strict priority would have wiped them out, in exchange for near-unanimous creditor support and a faster 87-day emergence.</div></div>
+        </div>
+        <div class="project-links">
+          <span class="disabled">repository - add link</span>
+          <span class="disabled">demo - n/a</span>
+          <span class="disabled">documentation - add link</span>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -919,7 +945,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
       </div>
       <div class="log-item ongoing">
         <div class="log-top"><span class="log-year">2026</span><span class="log-title">Research Project</span><span class="log-status ongoing">ongoing</span></div>
-        <div class="log-desc">Calendar Anomalies in Indian Equities - see <a href="#publications" style="color:var(--cyan)">publications</a>.</div>
+        <div class="log-desc">Calendar Anomalies in Indian Equities — see <a href="#publications" style="color:var(--cyan)">publications</a>.</div>
       </div>
     </div>
   </div>
@@ -1068,9 +1094,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   var CONFIG = {
     name: "Yugandhar Aphale",
     email: "aphaleyugandhar07@gmail.com",
-    github: "yugandharaphale7",       
+    github: "yugandharaphale7",       // GitHub username — also powers the live activity panel
     linkedin: "www.linkedin.com/in/yugandharaphale",
-    resumeUrl: "YugandharAphaleResume.pdf",                
+    resumeUrl: "#",                // link to a hosted resume PDF
+    docsUrl: "#"                   // fallback link used by a few terminal commands
   };
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
